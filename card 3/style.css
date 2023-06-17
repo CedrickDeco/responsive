@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400;600&family=Great+Vibes&family=Lora:ital,wght@1,400;1,500;1,600&family=Philosopher:wght@400;700&family=Redressed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Saira+Condensed:wght@500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Redressed", cursive;
+    border-color: #151320;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    /* place-items: center center; */
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    padding: 20px;
+    grid-gap: 20px;
+    width: 100vw;
+}
+
+.card {
+    position: relative;
+    height: 400px;
+    border-color: #1c1b29;
+    border-radius: 15px;
+    box-shadow: 0px 7px 8px 1px rgb(0 0 0 / 40%);
+    text-align: center;
+    background: #c1fff7;
+    overflow: hidden;
+    /*il permet que le border radius s'applique sur l'image car il gère les debordements point des angles*/
+}
+
+.img-container {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    padding: 0 10px;
+}
